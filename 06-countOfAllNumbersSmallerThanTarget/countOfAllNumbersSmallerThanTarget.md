@@ -12,7 +12,14 @@ THEN: We output 5
 
 ```js
 function countOfAllNumbersSmallerThanTarget(nums) {
-  // Insert code here;
+  let count=0;
+
+  for(let i=0;i<nums.length;i++){
+    if(nums[i]<target){
+      count++;
+    }
+  }
+  return count;
 }
 
 countOfAllNumbersSmallerThanTarget([1,2,3,4,5], 9) -----> 5;
@@ -28,7 +35,14 @@ THEN: We output 4
 
 ```js
 function countOfAllNumbersSmallerThanTarget(nums) {
-  // Insert code here;
+  let count=0;
+
+  for(let i=0;i<nums.length;i++){
+    if(nums[i]<target){
+      count++;
+    }
+  }
+  return count;
 }
 
 countOfAllNumbersSmallerThanTarget([1,5,3,2,20,18], 18) -----> 4;
