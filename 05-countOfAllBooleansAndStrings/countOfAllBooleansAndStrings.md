@@ -12,7 +12,15 @@ THEN: We output 4
 
 ```js
 function countOfAllBooleansAndStrings(arr) {
-  // Insert code here;
+  let count=0;
+
+  for(let i = 0; i<arr.length;i++){
+    if(typeof arr[i]==="boolean"||typeof arr[i]==="string"){
+      count++;
+    }
+  }
+
+  return count;
 }
 
 countOfAllBooleansAndStrings([true, "true", false, "false", 9]) -----> 4;
@@ -28,7 +36,15 @@ THEN: We output 6
 
 ```js
 function countOfAllBooleansAndStrings(arr) {
-  // Insert code here;
+  /let count=0;
+
+  for(let i = 0; i<arr.length;i++){
+    if(typeof arr[i]==="boolean"||typeof arr[i]==="string"){
+      count++;
+    }
+  }
+
+  return count;
 }
 
 countOfAllBooleansAndStrings(["hey", "there", "hello", "there", "world", false]) -----> 6;
