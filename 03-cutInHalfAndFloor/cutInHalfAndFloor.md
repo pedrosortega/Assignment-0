@@ -12,7 +12,12 @@ THEN: We output 11
 
 ```js
 function cutInHalfAndFloor(num) {
-  // Insert code here;
+   if(num%2===0){
+    return num/2;
+  }
+  else{
+    return Math.floor(num/2);
+  }
 }
 
 cutInHalfAndFloor(22) -----> 11;
@@ -28,7 +33,12 @@ THEN: We output 49
 
 ```js
 function cutInHalfAndFloor(num) {
-  // Insert code here;
+  if(num%2===0){
+    return num/2;
+  }
+  else{
+    return Math.floor(num/2);
+  }
 }
 
 cutInHalfAndFloor(99) -----> 49;
