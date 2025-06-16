@@ -12,7 +12,7 @@ THEN: We output "Hello, Albert!"
 
 ```js
 function greetFriend(name) {
-  // Insert code here;
+  return "Hello, " + name + "!";
 }
 
 greetFriend("Albert") -----> "Hello, Albert!";
