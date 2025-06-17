@@ -12,7 +12,14 @@ THEN: We output 3
 
 ```js
 function sumOfAllEvenNumbers(nums) {
-  // Insert code here;
+  let count = 0;
+
+  for(let i = 0; i < nums.length;i++){
+    if(nums[i]%2===0){
+      count++;
+    }
+  }
+  return count;
 }
 
 sumOfAllEvenNumbers([0,1,2,3,4,5]) -----> 3;
@@ -28,7 +35,14 @@ THEN: We output 5
 
 ```js
 function sumOfAllEvenNumbers(nums) {
-  // Insert code here;
+  let count = 0;
+
+  for(let i = 0; i < nums.length;i++){
+    if(nums[i]%2===0){
+      count++;
+    }
+  }
+  return count;
 }
 
 sumOfAllEvenNumbers([2,4,6,7,8,9,10]) -----> 5;
