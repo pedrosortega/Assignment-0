@@ -12,7 +12,12 @@ THEN: We output true
 
 ```js
 function isPalindrome(word) {
-  // Insert code here;
+  if(word===word.split("").reverse().join("")){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
 isPalindrome("racecar") -----> true;
@@ -28,7 +33,12 @@ THEN: We output false
 
 ```js
 function isPalindrome(word) {
-  // Insert code here;
+  if(word===word.split("").reverse().join("")){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
 
 isPalindrome("door") -----> false;
