@@ -12,7 +12,18 @@ THEN: We output 4
 
 ```js
 function sumOfMinimumAndMaximum(nums) {
-  // Insert code here;
+  let min=nums[0];
+  let max=nums[0];
+
+  for(let i = 1;i<nums.length;i++){
+    if(nums[i]<min){
+      min = nums[i];
+    }
+    else if (nums[i]>max){
+      max=nums[i];
+    }
+  }  
+  return min + max;
 }
 
 sumOfMinimumAndMaximum([2,2]) -----> 4;
@@ -28,7 +39,18 @@ THEN: We output 25
 
 ```js
 function sumOfMinimumAndMaximum(nums) {
-  // Insert code here;
+  let min=nums[0];
+  let max=nums[0];
+
+  for(let i = 1;i<nums.length;i++){
+    if(nums[i]<min){
+      min = nums[i];
+    }
+    else if (nums[i]>max){
+      max=nums[i];
+    }
+  }  
+  return min + max;
 }
 
 sumOfMinimumAndMaximum([2,4,5,6,23]) -----> 5;
