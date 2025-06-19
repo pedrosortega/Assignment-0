@@ -15,7 +15,15 @@ THEN: We output 15
 ```js
 class MySolution {
   countDownSum(num) {
-    // Insert code here;
+    if(num===0){
+      return 0;
+    }
+    else if (num===1){
+      return 1;
+    }
+    else{
+      return num+this.countDownSum(num-1);
+    }
   }
 }
 
@@ -34,7 +42,15 @@ THEN: We output 55
 ```js
 class MySolution {
   countDownSum(num) {
-    // Insert code here;
+    if(num===0){
+      return 0;
+    }
+    else if (num===1){
+      return 1;
+    }
+    else{
+      return num+this.countDownSum(num-1);
+    }
   }
 }
 
