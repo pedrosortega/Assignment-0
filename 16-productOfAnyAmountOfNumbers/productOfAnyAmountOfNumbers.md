@@ -14,7 +14,11 @@ THEN: We output 60
 
 ```js
 function productOfAnyAmountOfNumbers(...args) {
-  // Insert code here;
+  let amount=1;
+  for(let i = 0;i<args.length;i++){
+    amount*=args[i];
+  }
+  return amount;
 }
 
 productOfAnyAmountOfNumbers(3,4,5) -----> 60;
@@ -30,7 +34,11 @@ THEN: We output 48
 
 ```js
 function productOfAnyAmountOfNumbers(...args) {
-  // Insert code here;
+  let amount=1;
+  for(let i = 0;i<args.length;i++){
+    amount*=args[i];
+  }
+  return amount;
 }
 
 productOfAnyAmountOfNumbers([2,4,6]) -----> 48;
