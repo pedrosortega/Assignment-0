@@ -21,7 +21,23 @@ THEN: We output [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fiz
 
 ```js
 function fizzBuzz(start, end) {
-  // Insert code here;
+  let array=[];
+
+  for(let i = start;i<=end;i++){
+     if (i%3===0&&i%5===0){
+      array.push("FizzBuzz");
+    }
+    else if(i%3===0){
+      array.push("Fizz");
+    }
+    else if (i%5===0){
+      array.push("Buzz");
+    }
+    else if ((i%3!==0)&&(i%5!==0)){
+      array.push(i);
+    }
+  }
+  return array;
 }
 
 fizzBuzz(1, 15) -----> [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz"];
@@ -37,7 +53,23 @@ THEN: We output [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fiz
 
 ```js
 function fizzBuzz(start, end) {
-  // Insert code here;
+  let array=[];
+
+  for(let i = start;i<=end;i++){
+     if (i%3===0&&i%5===0){
+      array.push("FizzBuzz");
+    }
+    else if(i%3===0){
+      array.push("Fizz");
+    }
+    else if (i%5===0){
+      array.push("Buzz");
+    }
+    else if ((i%3!==0)&&(i%5!==0)){
+      array.push(i);
+    }
+  }
+  return array;
 }
 
 fizzBuzz(1, 20) -----> [1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz", 16, 17, "Fizz", 19, "Buzz"];
