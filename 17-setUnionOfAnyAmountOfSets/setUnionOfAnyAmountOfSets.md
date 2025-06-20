@@ -14,7 +14,16 @@ THEN: We output { 1, 2, 4, 5, 6, 7, 8 }
 
 ```js
 function setUnionOfAnyAmountOfSets(...args) {
-  // Insert code here;
+  const mergedSet=new Set();
+
+  // work through each set
+  for(const generalSets of args){
+    // access element of each set
+    for(element of generalSets){
+      mergedSet.add(element);
+    }
+  }
+  return mergedSet;
 }
 
 setUnionOfAnyAmountOfSets({ 1, 2, 4 }, { 4, 5, 6 }, { 6, 7, 8 }) -----> { 1, 2, 4, 5, 6, 7, 8 };
@@ -30,7 +39,16 @@ THEN: We output { 1, 2, 3, 4, 5, 6 }
 
 ```js
 function setUnionOfAnyAmountOfSets(...args) {
-  // Insert code here;
+  const mergedSet=new Set();
+
+  // work through each set
+  for(const generalSets of args){
+    // access element of each set
+    for(element of generalSets){
+      mergedSet.add(element);
+    }
+  }
+  return mergedSet;
 }
 
 setUnionOfAnyAmountOfSets({ 1, 2 }, { 3, 4 }, { 5, 6 }) -----> { 1, 2, 3, 4, 5, 6 };
