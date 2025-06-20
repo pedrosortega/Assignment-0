@@ -12,7 +12,14 @@ THEN: We output "The Cow Jumped Over The Moon"
 
 ```js
 function titleCaseEdit(title) {
-  // Insert code here;
+  let sentence=title.split(" ");
+  let newArr=[]
+
+  for(let letter of sentence){
+    let result = letter[0].toUpperCase()+letter.slice(1).toLowerCase();
+        newArr.push(result);
+  }
+  return newArr.join(" ");
 }
 
 titleCaseEdit("the cow jumped over the moon") -----> "The Cow Jumped Over The Moon";
@@ -28,7 +35,14 @@ THEN: We output "The Boy Who Cried Wolf"
 
 ```js
 function titleCaseEdit(title) {
-  // Insert code here;
+  let sentence=title.split(" ");
+  let newArr=[]
+
+  for(let letter of sentence){
+    let result = letter[0].toUpperCase()+letter.slice(1).toLowerCase();
+        newArr.push(result);
+  }
+  return newArr.join(" ");
 }
 
 titleCaseEdit("the Boy who Cried wolf") -----> "The Boy Who Cried Wolf";
