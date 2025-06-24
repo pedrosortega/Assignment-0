@@ -4,7 +4,18 @@ class MySolution {
   }
 
   binarySearch(nums, target) {
-    // Insert code here;
+    let low = 0;
+    let high = nums.length - 1;
+
+    let mid = Math.floor((low + high) / 2);
+    if (nums[mid] === target) {
+      return true;
+    } else if (nums[mid] < target) {
+      return this.binarySearch(nums.slice(mid + 1), target);
+    } else if (nums[mid] > target) {
+      return this.binarySearch(nums.slice(0, mid), target);
+    }
+    return false;
   }
 }
 
